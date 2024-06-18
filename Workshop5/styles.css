@@ -47,7 +47,16 @@ p {
 }
 
 .iphone-image {
-  width: 50px; /* Ancho en píxeles */
+  width: 200px; /* Ancho en píxeles */
+  margin: 0 auto; /* Centrado */
+}
+
+.iphone-image2 {
+  position: relative;
+  top: 0px;
+  left: 180px;
+  width: 200px; /* Ancho en píxeles */
+  height: 410px;
   margin: 0 auto; /* Centrado */
 }
 
