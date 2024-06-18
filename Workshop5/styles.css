@@ -25,14 +25,7 @@ p {
   font-size: 3rem;
 }
 
-.section-3 {
-  background: url("images/Fondo.png") no-repeat center center;
-  background-size: cover;
-  padding: 50px 0;
-  color: #fff;
-}
-
-.section-4 {
+.container-fluid.bg-custom {
   background: url("images/Fondo.png") no-repeat center center;
   background-size: cover;
   padding: 50px 0;
@@ -48,13 +41,13 @@ p {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.img-fluid.responsive-image {
+.responsive-image {
   max-width: 100%;
   height: auto;
 }
 
-.img-fluid.iphone-image {
-  width: 300px; /* Ancho en píxeles */
+.iphone-image {
+  width: 50px; /* Ancho en píxeles */
   margin: 0 auto; /* Centrado */
 }
 
