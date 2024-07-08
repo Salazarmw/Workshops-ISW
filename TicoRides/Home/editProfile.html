@@ -3,20 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Registration</title>
+    <title>Aventones - Search Rides</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
   </head>
   <body>
-    <div class="registration-container">
-      <div class="logo-container">
-        <div class="logo">
-          <img
-            src="../Resources/Images/logoAventones.png"
-            alt="Aventones Logo"
-          />
+    <div class="logo-container">
+      <img src="../Resources/Images/logoAventones.png" alt="Aventones Logo" />
+    </div>
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../Home/home.html" class="active">Home</a></li>
+          <li><a href="../Rides/myRides.html">Rides</a></li>
+          <li><a href="../Booking/booking.html">Bookings</a></li>
+        </ul>
+        <div class="right-container">
+          <div class="search-container">
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="user-menu">
+            <button class="user-icon">
+              <img src="../Resources/Images/userIcon.png" alt="User Menu" />
+            </button>
+            <div class="dropdown-content">
+              <a href="../index.html">Logout</a>
+              <a href="../Home/editProfile.html">Settings</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <h1>User Registration</h1>
+      </nav>
+    </header>
+    <main>
+      <h1>Edit Profile</h1>
       <hr />
       <div class="registration-box">
         <form>
@@ -80,22 +103,13 @@
             </div>
           </div>
 
-          <div class="link-group">
-            <p class="register-links">
-              Already an user? <a href="../index.html">Login here</a>
-            </p>
-
-            <p class="register-links">
-              Register as driver? <a href="#">Click here</a>
-            </p>
-          </div>
-
           <div class="button-container">
-            <button class="register-button">Sign up</button>
+            <a href="#">cancel</a>
+            <button class="save-button">Save</button>
           </div>
         </form>
       </div>
-    </div>
+    </main>
     <footer>
       <nav>
         <a href="../Home/home.html">Home |</a>
@@ -108,6 +122,5 @@
       <br />
       <p>&copy; Aventones.com</p>
     </footer>
-    <script src="../Resources/JavaScripts/countries.js"></script>
   </body>
 </html>
