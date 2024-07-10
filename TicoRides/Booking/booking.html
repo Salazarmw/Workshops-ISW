@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aventones - Search Rides</title>
+    <title>Aventones - Booking</title>
     <link rel="stylesheet" href="../styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
   <body>
+    <!-- Logo section -->
     <div class="logo-container">
       <img src="../Resources/Images/logoAventones.png" alt="Aventones Logo" />
     </div>
+
+    <!-- Navigation bar -->
     <header>
       <nav class="main-nav">
         <ul>
@@ -37,23 +39,25 @@
         </div>
       </nav>
     </header>
+
+    <!-- Main content: Bookings -->
     <main>
       <h1>Bookings</h1>
       <hr />
+      <!-- Table of bookings -->
       <table>
         <thead>
           <tr>
             <th>User</th>
             <th>Ride</th>
-            <th>Accpet/Reject</th>
+            <th>Accept/Reject</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>
-              <img src="../Resources/Images/userIcon.png" alt="User" /> fulano
-            </td>
-            <td>Ciudad Quesada - Naranjo</td>
+            <td class="flex-cell"><img src="../Resources/Images/userIcon.png"
+                alt="User" /> fulano</td>
+            <td class="flex-cell">Ciudad Quesada - Naranjo</td>
             <td class="flex-cell">
               <a href="#">Accept</a>
               <span>|</span>
@@ -61,10 +65,9 @@
             </td>
           </tr>
           <tr>
-            <td>
-              <img src="../Resources/Images/userIcon.png" alt="User" /> yluna
-            </td>
-            <td>Fortuna - San José</td>
+            <td class="flex-cell"><img src="../Resources/Images/userIcon.png"
+                alt="User" /> yluna</td>
+            <td class="flex-cell">Fortuna - San José</td>
             <td class="flex-cell">
               <a href="#">Accept</a>
               <span>|</span>
@@ -74,6 +77,8 @@
         </tbody>
       </table>
     </main>
+
+    <!-- Footer -->
     <footer>
       <nav>
         <a href="../Home/home.html">Home |</a>

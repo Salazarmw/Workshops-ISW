@@ -22,26 +22,12 @@ TicoRides is a prototype web application designed to facilitate carpooling in Co
 To run this project locally, follow these steps:
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/Salazarmw/Workshops-ISW.git
-    ```
+
+   git clone https://github.com/Salazarmw/Workshops-ISW.git
 
 2. Navigate to the project folder:
-    ```bash
-    cd Workshops-ISW/TicoRides
-    ```
 
-3. Install the project dependencies:
-    ```bash
-    npm install
-    ```
-
-4. Configure the necessary environment variables (see Configuration section).
-
-5. Start the application:
-    ```bash
-    npm start
-    ```
+   cd Workshops-ISW/TicoRides
 
 ## Usage
 

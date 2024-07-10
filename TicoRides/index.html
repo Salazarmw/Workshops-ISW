@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
   <body>
+    <!-- Main container for login content -->
     <div class="login-container">
+
+      <!-- Logo section -->
       <div class="logo-container">
         <h1 class="logo">
           <img src="Resources/Images/logoAventones.png" alt="Aventones Logo" />
         </h1>
       </div>
 
+      <!-- Google login button section -->
       <div class="button-container">
         <button class="google-login">
           <img src="Resources/Images/logoGoogle.png" alt="Google Logo" />
@@ -25,29 +28,37 @@
         </button>
       </div>
 
+      <!-- Standard login form -->
       <div class="login-box">
         <p>Or</p>
         <form>
+          <!-- Username input -->
           <div class="form-group">
             <label for="usernameLogin">Username</label>
             <input type="text" id="usernameLogin" required />
           </div>
 
+          <!-- Password input -->
           <div class="form-group">
             <label for="passwordLogin">Password</label>
             <input type="password" id="passwordLogin" required />
           </div>
 
+          <!-- Registration link -->
           <p class="register">
-            Not an user? <a href="./Register/register.html">Register Now</a>
+            Not a user? <a href="./Register/register.html">Register Now</a>
           </p>
         </form>
 
+        <!-- Login button -->
         <div class="center-button">
-          <button type="submit" onclick="window.location.href='./Home/home.html'">Login</button>
+          <button type="submit"
+            onclick="window.location.href='./Home/home.html'">Login</button>
         </div>
       </div>
     </div>
+
+    <!-- Footer section with navigation -->
     <footer>
       <nav>
         <a href="#">Home |</a>

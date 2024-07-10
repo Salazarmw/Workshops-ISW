@@ -3,21 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aventones - Search Rides</title>
+    <title>Aventones</title>
     <link rel="stylesheet" href="../styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
   <body>
+    <!-- Logo section -->
     <div class="logo-container">
       <img src="../Resources/Images/logoAventones.png" alt="Aventones Logo" />
     </div>
+
+    <!-- Navigation bar -->
     <header>
       <nav class="main-nav">
         <ul>
@@ -41,11 +39,17 @@
         </div>
       </nav>
     </header>
+
+    <!-- Main content: My rides table -->
     <main>
       <h1>My rides</h1>
       <hr />
-      <div class="button-container">
-        <button class="my-rides-button">New Ride</button>
+      <div class="rides-button-container">
+        <button
+          class="my-rides-button"
+          onclick="window.location.href='../Rides/addRide.html'">
+          New Ride
+        </button>
       </div>
       <table>
         <thead>
@@ -61,22 +65,22 @@
         <tbody>
           <tr>
             <td class="flex-cell"><a href="#">Quesada</a></td>
-            <td>Naranjo</td>
-            <td>1</td>
-            <td>Toyota Corolla 2020</td>
-            <td>$10</td>
+            <td class="flex-cell">Alajuela</td>
+            <td class="flex-cell">2</td>
+            <td class="flex-cell">Nissan Pathfinder 2015</td>
+            <td class="flex-cell">$5</td>
             <td class="flex-cell">
-              <a href="#">Edit</a>
+              <a href="../Rides/editRide.html">Edit</a>
               <span>|</span>
               <a href="#">Delete</a>
             </td>
           </tr>
           <tr>
-            <td class="flex-cell"><a href="#">Aguas Zarcas</a></td>
-            <td>Naranjo</td>
-            <td>1</td>
-            <td>Ford Festiva 1990</td>
-            <td>--</td>
+            <td class="flex-cell"><a href="#">Quesada</a></td>
+            <td class="flex-cell">Naranjo</td>
+            <td class="flex-cell">1</td>
+            <td class="flex-cell">Toyota Corolla 2020</td>
+            <td class="flex-cell">$10</td>
             <td class="flex-cell">
               <a href="#">Edit</a>
               <span>|</span>
@@ -86,6 +90,8 @@
         </tbody>
       </table>
     </main>
+
+    <!-- Footer -->
     <footer>
       <nav>
         <a href="../Home/home.html">Home |</a>

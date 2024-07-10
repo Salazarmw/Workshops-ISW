@@ -4,11 +4,17 @@
   --link-color: #1071F2;
   --secondary-color: #f6f6f6;
   --background-color: #fff;
-  --text-color: #000000;
+  --text-color: #000;
   --nav-text-color: #898989;
-  --border-color: #dddddd;
-  --footer-color: #aaaaaa;
+  --border-color: #ddd;
+  --footer-color: #aaa;
   --secundary-text-color: #606060;
+  --title-line-color: #cfcfcf;
+  --login-border-color: #428ac9;
+  --google-login-button-color: #4585f7;
+  --registration-input-border-color: #6c6c6c;
+  --register-button-hover-color: #959595;
+  --header-cell-background-color: #f2f2f2;
 }
 
 /* General Styles */
@@ -39,6 +45,7 @@ body {
 
 label {
   text-align: left;
+  margin-bottom: 3px;
 }
 
 input {
@@ -129,10 +136,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 0px 50px 50px;
   width: 100%;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .my-rides-button {
@@ -176,7 +183,7 @@ hr {
   align-items: center;
   justify-content: center;
   border: none;
-  border-bottom: 2px solid #cfcfcf;
+  border-bottom: 2px solid var(--title-line-color);
   width: 200px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -186,6 +193,38 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  vertical-align: middle;
+}
+
+table th {
+  background-color: var(--header-cell-background-color);
+}
+
+td img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.flex-cell {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex-cell a {
+  text-decoration: underline;
+  color: blue;
+}
+
+.flex-cell span {
+  margin: 0;
 }
 
 footer {
@@ -215,6 +254,7 @@ footer p {
 legend {
   padding: 0 10px;
 }
+
 fieldset {
   border: 1px solid var(--border-color);
   padding: 20px 0px;
@@ -231,7 +271,7 @@ fieldset {
 }
 
 .login-container {
-  border: 3px solid #428ac9;
+  border: 3px solid var(--login-border-color);
   max-width: 900px;
   width: 100%;
 
@@ -252,6 +292,14 @@ fieldset {
   text-align: center;
   max-width: 400px;
   width: 100%;
+}
+
+.login-box input {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .login-box p:first-child {
@@ -285,7 +333,7 @@ fieldset {
 }
 
 .google-login span {
-  color: #4585f7;
+  color: var(--google-login-button-color);
   font-weight: bold;
   font-size: 1em;
 }
@@ -323,7 +371,7 @@ fieldset {
 
 .registration-box select,
 input {
-  border: 1px solid #6c6c6c;
+  border: 1px solid var(--registration-input-border-color);
   color: var(--secundary-text-color);
   font-family: "Source Sans Pro", serif;
   font-size: 18px;
@@ -383,7 +431,7 @@ fieldset .input-group input {
 }
 
 .register-button:hover {
-  background-color: #959595;
+  background-color: var(--register-button-hover-color);
 }
 
 .save-button {
@@ -438,7 +486,7 @@ fieldset .input-group input {
 header {
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 50px 50px 35px;
 }
 
 .main-nav {
@@ -665,7 +713,7 @@ header {
 .days-select {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 10px;
   margin-bottom: 10px;
 }
@@ -691,47 +739,10 @@ header {
   width: 100%;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table th,
-table td {
-  padding: 10px;
-  border: 1px solid var(--border-color);
-  text-align: center;
-  vertical-align: middle;
-}
-
-table th {
-  background-color: #f2f2f2;
-}
-
-td img {
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-.flex-cell {
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.flex-cell a {
-  text-decoration: underline;
-  color: blue;
-}
-
-.flex-cell span {
-  margin: 0;
-}
-
 #map {
   width: 100%;
   height: 400px;
-  background-color: #ddd;
+  background-color: var(--border-color);
 }
 
 .ride-data-container {
